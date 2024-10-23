@@ -43,10 +43,10 @@
 
         header {
             background: rgba(50, 50, 50, 0.8);
-            padding: 10px; /* Reducir el padding para hacer el header más pequeño */
+            padding: 3px; /* Reducir el padding para hacer el header más pequeño */
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-            position: sticky; /* Mantener el header visible al hacer scroll */
+            /* Mantener el header visible al hacer scroll */
             top: 0;
             z-index: 1;
         }
@@ -195,6 +195,55 @@
         iframe {
             margin: 20px 0; /* Espacio vertical entre los videos */
         }
+        @media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reducir tamaño de fuente en dispositivos móviles */
+    }
+
+    .menu-item {
+        margin: 0 10px; /* Reducir margen entre ítems del menú */
+        font-size: 0.9em; /* Ajustar el tamaño de fuente */
+    }
+
+    .artist-image {
+        width: 100%; /* Hacer la imagen responsiva */
+        height: auto; /* Mantener la proporción */
+        margin: 0 auto; /* Centrar la imagen */
+    }
+
+    .content {
+        flex-direction: column; /* Cambiar a columna para mejor visualización */
+        align-items: center; /* Centrar el contenido */
+    }
+
+    .video-section {
+        width: 100%; /* Ajustar el ancho para pantallas pequeñas */
+    }
+
+    iframe {
+        width: 100%; /* Hacer los iframes responsivos */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .social-icons {
+        position: relative; /* Cambiar a posición relativa para móviles */
+        top: 10px; /* Ajustar posición */
+        right: 0; /* Alinear a la derecha */
+    }
+
+    footer {
+        text-align: center; /* Centrar contenido en el pie de página */
+    }
+
+    .language-options {
+        text-align: center; /* Centrar opciones de idioma */
+    }
+
+    .github-icon {
+        font-size: 1.5em; /* Reducir tamaño del icono de GitHub */
+    }
+}
+    
     </style>
 </head>
 <body>
